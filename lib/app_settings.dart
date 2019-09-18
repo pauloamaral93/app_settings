@@ -19,6 +19,11 @@ class AppSettings {
   static Future<void> openSecuritySettings() async {
     _channel.invokeMethod('security');
   }
+  
+    /// Future async method call to open security settings.
+  static Future<void> openBluetoothSettings() async {
+    _channel.invokeMethod('bluetooth');
+  }
 
   /// Future async method call to open app specific settings screen.
   static Future<void> openAppSettings() async {
